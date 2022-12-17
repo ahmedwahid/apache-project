@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t ahmedwahid/apache-project:v1 .'
+				sh 'docker build -t ahmedwahid/apache-project:v2 .'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push ahmedwahid/apache-project:v1'
+				sh 'docker push ahmedwahid/apache-project:v2'
 			}
 		}
 	}
